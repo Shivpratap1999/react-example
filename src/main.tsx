@@ -13,6 +13,8 @@ import Profile from './components/Profile'
 import { IdLoader, ProfileInfoLoader } from './components/Loader'
 import LoginSignup from './screens/LginSignup/LoginSIgnup'
 
+//added comment 
+
 const router = createBrowserRouter([
   {
     path: '/',
