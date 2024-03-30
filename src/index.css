@@ -1,0 +1,564 @@
+body {
+  margin: 0;
+  padding: 0px;
+  font-family: sans-serif;
+}
+/* ############################## Utility Classes ################################################# */
+.pannel{
+  margin: 20px 6vw;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.shadow-high{
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+}
+
+.shadow-low{
+  box-shadow: 0px 0px 80px hsla(0, 0%, 0%, 0.1);
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.hading-1{
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.hading-2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.hading-altra{
+  font-size: 10em;
+  font-weight: bold;
+}
+
+.red-bg{
+  background-color: red;
+}
+.green-bg{
+  background-color: green;
+}
+
+/* ###################### Header Styles ####################################### */
+.header{
+  height: 10vh;
+  overflow: hidden;
+  padding: 0 6vw;
+  background-color: hsl(240, 3%, 13%);
+  display: flex;
+  justify-content: space-between;
+}
+.logo-wrapper{
+  padding: 15px;
+}
+.logo-wrapper img{
+  width: 100%;
+  height: 100%;
+} 
+
+.nav-bar-container{
+  padding-top: 10px;
+}
+.nav-bar-container ul li{
+  display: inline;
+  cursor: pointer;
+  width: 25%;
+  padding: 10px;
+}
+
+.nav-bar-container ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(180, 57%, 60%);
+}
+
+.nav-bar-container ul li a:hover{
+  color: hsl(180, 57%, 44%);
+}
+
+.user-info-wrapper{
+  min-width: 30%;
+}
+/* ################################# UserInfo component styles ##################################### */
+
+.userinfo-wrapper{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userinfo-wrapper h1 {
+  color: hsl(188, 60%, 49%);
+  padding-right: 10px;
+}
+
+.userinfo-image {
+  margin-right: 10px;
+  cursor: pointer;
+  border: 3px solid hsl(188, 60%, 49%);
+  border-radius: 50%;
+  width: 45px;
+  height:35px;
+  overflow: hidden; /* Ensures the image fits within the rounded border */
+}
+
+.userinfo-image img {
+  width: 100%; /* Ensures the image fills the entire container */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes extra space below the image */
+}
+
+.header-button{
+  background-color: hsl(120, 100%, 25%);
+  width: 70px;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header-button:hover{
+  background-color: hsl(120, 100%, 15%);
+}
+
+/* ########################### Welcome  Message ##############################################*/
+
+.welcome-box{
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+/* ##########################################  Job Section styles ############################################# */
+.job-container {
+  border: 1px solid rgb(0, 0%, 80);
+  padding: 30px;
+  height: fit-content;
+}
+
+.card{
+  border: 1px solid rgb(0, 0%, 80);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 200px;
+  max-width: 300px;
+  display: inline-block;
+}
+.card:hover{
+  cursor: pointer;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  border: 1px solid rgb(202, 205, 244);
+}
+
+.card .card-image{
+  max-width: 60%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.card .card-title{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: hsl(0,0%,20%);
+}
+
+.card .card-text{
+  font-family: Arial, sans-serif;
+  color: hsl(0,0%,30%);
+}
+
+/* #######################33333 Button Styles */
+
+.button-wrapper {
+  text-align: center;
+  margin: 6vw;
+  display: flex;
+  justify-content:center
+}
+
+.button{
+  width: fit-content;
+  border-radius: 10px;
+  background-color: rgb(101, 80, 23);
+  height: 40px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bolder;
+  font-size: 1em;
+}
+
+.button:hover{
+  background-color: rgb(111, 180, 23);
+}
+
+
+/* ###############################333 List Container Styles */
+.list-category{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsl(0,0%,20%);
+  margin-left: 6vw;
+  margin-right: 6vw;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 5px;
+  background-color: rgba(55, 216, 227, 0.877);
+}
+
+.lint-items li{
+  font-size: 2em;
+  list-style: none;
+  color: hsl(0,0%,25%);
+  text-align: center;
+  margin: 0;
+}
+
+.lint-items li:hover{
+  color: hsl(0,0%,45%);
+  cursor: pointer;
+}
+
+
+/* ####################################### useState Example Panel Style ############################### */
+.use-stat-example{
+  padding: 20px;
+  background-color: rgb(238, 233, 227);
+  border: none;
+}
+
+.user-info-container{
+  margin-bottom: 5px;
+  display: flex;
+  flex: 50%;
+}
+
+.flex-box{
+  width: 100%;
+}
+
+
+/* ################################# Counter game Styles ################################### */
+.counter-container{
+  border-radius: 5px;
+  text-align: center;
+  margin: 6vw;
+  font-family: Arial, sans-serif;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  padding: 20px;
+}
+
+.count-display{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.counter-button{
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  background-color: hsl(197, 55%, 71%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.counter-button:hover{
+  background-color: hsl(197, 100%, 48%);
+}
+
+/* ###################### Color Picker Styles ########################################## */
+.color-picker-container{
+  margin: 6vw;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.color-picker-container:hover{
+  border: 1px solid rgb(155, 155, 155);
+}
+
+.color-picker-container h1{
+  margin: 50px;
+  font-size: 3rem;
+}
+
+.color-display{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid hsl(0,0%,80%);
+  border-radius: 25px;
+  margin-bottom: 25px;
+  transition: 1.0s ease;
+}
+
+.color-display p{
+  color: hsl(0,0%,20%);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.color-picker-container label{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.color-picker-container input[type="color"]{
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid hsl(0,0%,80%);
+}
+
+.object-state-test-container{
+  margin: 100px;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.to-do-list{
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 6vw;
+  padding: 20px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.to-do-list h1{
+  font-size: 4rem;
+  color: white;
+}
+
+.to-do-list input[type="text"]{
+  font-size: 1.6rem;
+  padding: 10px;
+  border: 2px solid hsla(0, 0%, 80%,0.5);
+  border-radius: 5px;
+  color: hsla(0, 0%, 0%, 0.5);
+
+}
+
+.to-do-list ol{
+  padding: 0;
+}
+
+.to-do-list li{
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 3px solid hsla(0, 0%, 80%,0.75);
+  background-color: hsl(0,0%,97%);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.text{
+  flex:1;
+}
+.to-do-list li:hover{
+  background-color: hsl(0,0%,90%);
+}
+
+.to-do-list button {
+  font-size: 1.7;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  transition: background-color 0.5s ease;
+}
+
+.add-button {
+  background-color: hsl(125,47%,54%);
+  font-size: 1.9rem;
+}
+
+.add-button:hover {
+  background-color: hsl(125,47%,34%);
+}
+
+.delete-button {
+  padding:8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  background-color: hsl(10,90%,50%);
+}
+
+.delete-button:hover {
+  background-color: hsl(10,90%,30%);
+}
+
+.move-button {
+  padding:8px 12px;
+  font-size: 1.4rem;
+  margin-left: 10px;
+  background-color: hsl(207,90%,64%);
+}
+
+.move-button:hover {
+  background-color: hsl(207,90%,44%);
+}
+
+.use-effect{
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 6vw;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.clock-container-outer{
+  background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+}
+
+.clock-container{
+  backdrop-filter: blur(5px);
+  width: 100vw;
+  padding: 10px 0;
+}
+
+.clock{
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  text-shadow: 3px 3px 5px hsla(0, 0%, 80%,0.75);
+}
+
+.use-context-container{
+  margin: 6vw;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  font-family: Arial, sans-serif;
+  background-color: bisque;
+}
+.use-context{
+  border: 2px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+.redux-container{
+  margin: 6vw;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+  border-radius: 10px;
+  min-height: 150px;
+  padding: 10px;
+}
+
+.redux-container:hover{
+  border: 1px solid black;
+}
+
+.profiles-container{
+  min-height: 150px;
+  border: 1px solid black;
+  display: flex;
+  background-color: hsl(159, 35%, 92%);
+}
+
+.profiles-link-container{
+  border-right: 5px solid hsl(120, 67%, 40%);
+  margin: 20px;
+  padding: 20px;
+}
+
+.profile-links{
+  display: flex;
+  flex-direction: row;
+  background-color: hsl(120, 67%, 40%);
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width: 100px;
+  font-size: 1.5rem;
+  width: 110px;
+  margin: 10px;
+  padding: 15px;
+}
+
+.profile-links-visited{
+  background-color: white;
+  color: hsl(120, 67%, 40%);
+  font-weight: bold;
+  box-shadow: 10px 10px 10px hsla(0, 0%, 0%, 0.5);
+}
+
+.profile-links:hover{
+  background-color: hsl(120, 67%, 30%);
+  color: white;
+}
+
+.profile-photo{
+  margin-left:40px ;
+  border-radius: 50%;
+  border: 5px solid hsl(120, 67%, 30%);
+  height: 200px;
+  margin-bottom: 10px;
+}
+.profile-form{
+  margin-top: 100px;
+  border: 2px solid black;
+}
+
+.profile-data{
+  padding:"5px"; 
+  text-align:"center"; 
+  font-size:"20px"; 
+  background:"none";
+  margin: 5px;
+  color: hsl(120, 67%, 30%);
+}
+
+.profile-data input{
+  padding: 10px;
+  border: 2px solid hsl(120, 67%, 30%);
+  font-size: 20px;
+}
